@@ -28,15 +28,25 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 	</properties>
-
+	<repositories>
+	<repository>
+	<id>nexus</id>
+	<name>mass</name>
+	<url>http://52.66.253.212:8081/repository/group/</url>
+	</repository>
+	</repositories>
 	<dependencies>
-		
+	<dependency>
+    <groupId>mss</groupId>
+    <artifactId>mail</artifactId>
+    <version>1.2.3</version>
+    </dependency>
+	
 		<dependency>
 			<groupId>org.json</groupId>
 			<artifactId>json</artifactId>
 			<version>20160212</version>
 		</dependency>
-		
 		<!-- test dependencies -->
 		<dependency>
 			<groupId>junit</groupId>
