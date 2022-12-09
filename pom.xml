@@ -28,6 +28,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 	</properties>
+	<!--
 	<repositories>
 	<repository>
 	<id>nexus</id>
@@ -35,6 +36,7 @@
 	<url>http://52.66.253.212:8081/repository/group/</url>
 	</repository>
 	</repositories>
+-->
 	<dependencies>
 	<dependency>
     <groupId>mss</groupId>
