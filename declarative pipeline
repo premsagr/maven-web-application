@@ -1,0 +1,22 @@
+ pipeline {
+    
+	 agent any 
+	 
+	    tools {
+		     maven 'maven3.3.9'
+	    
+		 }
+      stages {
+	  
+	     stage('checkout') {
+		   steps {
+		   checkout([$class: 'GitSCM', branches: [[name: 'devlopment']], extensions: [], userRemoteConfigs: [[credentialsId: '4bdb0a5f-161b-4f88-bf8f-377c492144b7', url: 'https://github.com/premsagr/maven-web-application.git']]])
+                     }
+                   }
+	      stage ('build'){
+		     steps {
+			   sh 'mvn clean install -f maven-web-application/declarative pipeline'
+			   }
+	    }
+    }
+}			    
